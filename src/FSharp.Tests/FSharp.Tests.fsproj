@@ -23,6 +23,7 @@
         <Compile Include="DenseVectorTests.fs" />
         <Compile Include="MatrixTests.fs" />
         <Compile Include="SparseMatrixTests.fs" />
+        <Compile Include="DenseMatrixGPUTests.fs" />
         <Compile Include="DenseMatrixTests.fs" />
         <Compile Include="Utilities.fs" />
         <Compile Include="BigRationalTests.fs" />
