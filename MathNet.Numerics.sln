@@ -28,27 +28,27 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{B54A0B40-DE22-49FB-B1C0-6E5BDA3B0B2F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
+		build.cmd = build.cmd
+		build.sh = build.sh
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
-		build\MathNet.Numerics.nuspec = build\MathNet.Numerics.nuspec
-		build\MathNet.Numerics.FSharp.nuspec = build\MathNet.Numerics.FSharp.nuspec
 		build\MathNet.Numerics.CUDA.Win.nuspec = build\MathNet.Numerics.CUDA.Win.nuspec
+		build\MathNet.Numerics.FSharp.nuspec = build\MathNet.Numerics.FSharp.nuspec
 		build\MathNet.Numerics.MKL.Linux-x64.nuspec = build\MathNet.Numerics.MKL.Linux-x64.nuspec
 		build\MathNet.Numerics.MKL.Linux-x86.nuspec = build\MathNet.Numerics.MKL.Linux-x86.nuspec
 		build\MathNet.Numerics.MKL.Linux.nuspec = build\MathNet.Numerics.MKL.Linux.nuspec
 		build\MathNet.Numerics.MKL.Win-x64.nuspec = build\MathNet.Numerics.MKL.Win-x64.nuspec
 		build\MathNet.Numerics.MKL.Win-x86.nuspec = build\MathNet.Numerics.MKL.Win-x86.nuspec
 		build\MathNet.Numerics.MKL.Win.nuspec = build\MathNet.Numerics.MKL.Win.nuspec
+		build\MathNet.Numerics.nuspec = build\MathNet.Numerics.nuspec
 		build\MathNet.Numerics.OpenBLAS.Win.nuspec = build\MathNet.Numerics.OpenBLAS.Win.nuspec
 		build\NativeProvider.targets = build\NativeProvider.targets
+		NuGet.config = NuGet.config
 		paket.dependencies = paket.dependencies
 		paket.lock = paket.lock
-		build.cmd = build.cmd
-		build.sh = build.sh
-		.gitignore = .gitignore
-		.gitattributes = .gitattributes
-		NuGet.config = NuGet.config
 		restore.cmd = restore.cmd
 		restore.sh = restore.sh
 	EndProjectSection
@@ -68,6 +68,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Text", "src\Data.Text\Data.Text.csproj", "{B626F8B8-51A5-4FB6-BE5A-E94B27B1A050}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Tests", "src\Data.Tests\Data.Tests.csproj", "{1FBB8988-3F40-4FCE-BEA8-2C705888804A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		kernels.fs = kernels.fs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

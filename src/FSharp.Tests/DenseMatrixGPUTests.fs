@@ -25,7 +25,7 @@ module DenseMatrixGPUTests =
 
     [<Test>]
     let ``DenseMatrixGPU.map2`` () =
-        GPU.Matrix.map2 id largeM largeM |> shouldEqual largeM
+        GPU.Matrix.map2 <@(+)@> largeM largeM |> shouldEqual (Matrix.map (fun x -> x + x) largeM)
 
     [<Test>]
     let ``DenseMatrixGPU.mXm`` () =
