@@ -69,6 +69,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Text", "src\Data.Text\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Tests", "src\Data.Tests\Data.Tests.csproj", "{1FBB8988-3F40-4FCE-BEA8-2C705888804A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src/Benchmark", "src\Benchmark", "{261950BE-04D5-4C17-97E2-AC55A8DDD608}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB85A3B3-77A8-4E82-8AF9-0F787B46ABC9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GPU", "src\Benchmark\GPU\GPU.fsproj", "{A7A0F6A1-883F-41E0-8324-58E791B6B8F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -148,6 +154,12 @@ Global
 		{1FBB8988-3F40-4FCE-BEA8-2C705888804A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FBB8988-3F40-4FCE-BEA8-2C705888804A}.Release-Signed|Any CPU.ActiveCfg = Debug|Any CPU
 		{1FBB8988-3F40-4FCE-BEA8-2C705888804A}.Release-Signed|Any CPU.Build.0 = Debug|Any CPU
+		{A7A0F6A1-883F-41E0-8324-58E791B6B8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A0F6A1-883F-41E0-8324-58E791B6B8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A0F6A1-883F-41E0-8324-58E791B6B8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A0F6A1-883F-41E0-8324-58E791B6B8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A0F6A1-883F-41E0-8324-58E791B6B8F6}.Release-Signed|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A0F6A1-883F-41E0-8324-58E791B6B8F6}.Release-Signed|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -157,5 +169,9 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = src/Numerics/Numerics.csproj
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82444930-9FD7-41B6-B476-CCE41A0C0A0B} = {261950BE-04D5-4C17-97E2-AC55A8DDD608}
+		{A7A0F6A1-883F-41E0-8324-58E791B6B8F6} = {261950BE-04D5-4C17-97E2-AC55A8DDD608}
 	EndGlobalSection
 EndGlobal
